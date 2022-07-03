@@ -7,7 +7,7 @@ function factorialize(num) {
   }
   while (i < num) {
     result *= i;
-    i = i + 1;
+    i++;
   }
   return result;
 }
