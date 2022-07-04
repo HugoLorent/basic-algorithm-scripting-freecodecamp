@@ -1,21 +1,21 @@
 function findLongestWordLength(str) {
-  let allWordsTab = [];
-  let wordTab = [];
+  let allWordsArray = [];
+  let wordArray = [];
   let longestWordLength = 0;
 
   for (let i = 0; i < str.length; i++) {
     if (str[i] !== ' ') {
-      wordTab.push(str[i]);
+      wordArray.push(str[i]);
     } else {
-      allWordsTab.push(wordTab);
-      wordTab = [];
+      allWordsArray.push(wordArray);
+      wordArray = [];
     }
   }
-  allWordsTab.push(wordTab);
+  allWordsArray.push(wordArray);
 
-  for (let i = 0; i < allWordsTab.length; i++) {
-    if (allWordsTab[i].length > longestWordLength) {
-      longestWordLength = allWordsTab[i].length;
+  for (let i = 0; i < allWordsArray.length; i++) {
+    if (allWordsArray[i].length > longestWordLength) {
+      longestWordLength = allWordsArray[i].length;
     }
   }
   return longestWordLength;
