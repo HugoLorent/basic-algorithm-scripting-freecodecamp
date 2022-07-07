@@ -16,7 +16,7 @@ console.log(
 );
 
 console.log(
-  findElement([1, 3, 5, 9], function (num) {
+  findElement([1, 3, 5, 9], (num) => {
     return num % 2 === 0;
   })
 );
